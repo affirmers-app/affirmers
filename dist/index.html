@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: https://cdn.dexscreener.com https://dd.dexscreener.com; connect-src 'self' https://solana-rpc.publicnode.com https://api.llama.fi https://api.dexscreener.com; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<title>Affirmers</title>
+<meta name="description" content="Affirmers ties social activity to coins built for Solana. Back the people you believe in and share in the activity that follows.">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/assets/tokens.css">
+<link rel="stylesheet" href="/assets/app.css">
+<script src="/assets/boot.js"></script>
+<script type="module" src="/assets/js/app.js"></script>
+</head>
+<body data-rpc="https://solana-rpc.publicnode.com">
+<svg width="0" height="0" aria-hidden="true" focusable="false" class="sr"><symbol id="mark" viewBox="440 560 1050 810"><path d="M910 578 L1155 1000 L1040 1065 L910 843 L706 1196 C1010 1150 1250 1000 1468 717 C1380 900 1180 1120 880 1265 C720 1330 560 1354 460 1354 Z M1203 1090 L1355 1354 L1200 1354 L1097 1168 Z"/></symbol></svg>
+<div class="progress" aria-hidden="true"></div>
+<a class="skip" href="#main">Jump past the header</a>
+
+<header class="bar">
+  <div class="bar__in">
+    <a class="brand" href="#top" aria-label="Affirmers, top of page"><svg class="brand__mark" aria-hidden="true"><use href="#mark"/></svg><span class="brand__name">Affirmers</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#flow">Flow</a><a href="#call">Call</a><a href="#signal">Signal</a><a href="#board">Board</a>
+    </nav>
+    <div class="bar__end">
+      <span class="pill" data-health data-state="connecting"><i class="dot" aria-hidden="true"></i><span class="pill__t" data-health-text>Connecting</span></span>
+      <span class="soc" data-record="x" data-state="absent" role="img" aria-disabled="true" aria-label="X, not linked yet"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></span><span class="soc" data-record="github" data-state="absent" role="img" aria-disabled="true" aria-label="GitHub, not linked yet"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg></span>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="ca" data-record="ca" data-state="stated" aria-label="Contract address"><div class="wrap ca__in"><div class="ca__label"><i class="dot dot--sm" aria-hidden="true"></i>Contract address</div><div class="ca__row"><code class="ca__addr" data-ca>11111111111111111111111111111111</code><button class="copy" type="button" data-copy="11111111111111111111111111111111"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg><span data-copy-label aria-live="polite">Copy</span></button></div></div></section>
+
+<section class="hero dark" id="top">
+  <canvas class="field" id="field" aria-hidden="true"></canvas>
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="wrap hero__in">
+    <div class="hero__copy">
+      <p class="chip rise" data-d="0"><svg class="sol" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h16l-2.4 3.6H2.6zM2.6 10.2h16l2.4 3.6H5zM5 16.4h16l-2.4 3.6H2.6z"/></svg>Solana</p>
+      <h1 class="display rise" data-d="1">Back the people you believe in</h1>
+      <p class="lede rise" data-d="2">Affirmers ties social activity to coins built for Solana. Choose someone you rate, stand behind them, and share in the activity that follows.</p>
+      <div class="cta rise" data-d="3">
+        <a class="btn btn--solid" href="#call">Try the 90-second call</a>
+        <a class="btn btn--ghost" href="#signal">Watch the network</a>
+      </div>
+      <p class="domain rise" data-d="3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg><span>affirmers.app</span></p>
+    </div>
+    <div class="stage rise" data-d="2" aria-hidden="true">
+      <span class="medal medal--a"><svg><use href="#mark"/></svg></span>
+      <span class="medal medal--b"><svg><use href="#mark"/></svg></span>
+      <span class="medal medal--c"><svg><use href="#mark"/></svg></span>
+      <article class="post card">
+        <div class="post__top"><span class="avatar"></span><b>@creator</b><svg class="tick" viewBox="0 0 24 24"><path d="M12 2l2.4 2 3.1-.2 1 2.9 2.7 1.6-.9 3 .9 3-2.7 1.6-1 2.9-3.1-.2L12 22l-2.4-2-3.1.2-1-2.9L2.8 15.7l.9-3-.9-3L5.5 8l1-2.9 3.1.2z"/><path class="tick__c" d="M8 12.3l2.6 2.6L16 9.5"/></svg><svg class="xmark" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></div>
+        <p class="post__txt">Grateful for all the support! This community means everything.</p>
+        <div class="post__img"></div>
+        <div class="post__foot"><span class="post__badge"><svg><use href="#mark"/></svg></span><div><b>Backed by Affirmers</b><span>Support that travels both ways.</span></div><span class="post__tick mono">$AFRM</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="stats light edge-up" aria-label="Live network readings">
+  <div class="wrap">
+    <dl class="stats__grid" aria-busy="true">
+      <div class="stat" data-reveal data-i="0"><dt>Current slot</dt><dd class="num display" data-slot data-skel>&mdash;</dd><span class="stat__sub">read from RPC</span></div>
+      <div class="stat" data-reveal data-i="1"><dt>Network TVL</dt><dd class="num display" data-tvl data-skel>&mdash;</dd><span class="stat__sub">via DefiLlama</span></div>
+      <div class="stat" data-reveal data-i="2"><dt>Listed-pair volume</dt><dd class="num display" data-vol data-skel>&mdash;</dd><span class="stat__sub">24h, in USD</span></div>
+      <div class="stat" data-reveal data-i="3"><dt>Pairs in view</dt><dd class="num display" data-count data-skel>&mdash;</dd><span class="stat__sub">Solana-tagged</span></div>
+    </dl>
+  </div>
+</section>
+
+<section class="flow dark edge-down" id="flow">
+  <div class="wrap">
+    <header class="sec__head" data-reveal>
+      <h2 class="display">From post to payout</h2>
+      <p>Four moves connect a person with a following to the people who rate them.</p>
+    </header>
+    <ol class="flow__grid">
+      <li class="card step" data-reveal data-i="0"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"/></svg></span><h3>Turn anyone into their own coin</h3><p>A creator, a founder, a friend with a following. Each one receives a token of their own, named after them.</p></li>
+      <li class="card step" data-reveal data-i="1"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span><h3>Every trade fuels the vault</h3><p>Activity around each token feeds a shared vault reserved for the person it names.</p></li>
+      <li class="card step" data-reveal data-i="2"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="3"/><path d="M3 10h18M16 15h2"/></svg></span><h3>Send support through X</h3><p>Your money reaches the person directly. The vault handles the reward side.</p></li>
+      <li class="card step step--hi" data-reveal data-i="3"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span><h3>Take your share</h3><p>Support travels both ways: stand behind someone, then share in the upside that follows.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="call light edge-up" id="call">
+  <div class="wrap">
+    <header class="sec__head" data-reveal>
+      <h2 class="display">The 90-second call</h2>
+      <p>Ninety seconds, a stack of invented creators, one decision each. YES backs them, NO passes. When the clock ends you see how your instincts held up.</p>
+    </header>
+    <div class="sim card" data-sim data-reveal data-i="1" data-phase="idle">
+      <div class="sim__top">
+        <span class="tag">Simulation only</span>
+        <span class="sim__clock mono" aria-live="off"><b data-sim-clock>90</b>s</span>
+      </div>
+      <div class="sim__bar" aria-hidden="true"><i data-sim-bar></i></div>
+
+      <div class="sim__panel" data-panel="idle">
+        <p class="sim__lead">Every profile below is made up. No wallet, no money, nothing to forecast. Just you and a timer.</p>
+        <button class="btn btn--solid" type="button" data-sim-start>Start the clock</button>
+      </div>
+
+      <div class="sim__panel" data-panel="run" hidden>
+        <p class="sim__count mono" aria-live="polite" data-sim-count>Profile 1 of 12</p>
+        <div class="sim__card" data-sim-card><b data-sim-name></b><p data-sim-line></p></div>
+        <p class="sim__verdict" data-sim-verdict aria-live="polite">&nbsp;</p>
+        <div class="sim__btns">
+          <button class="btn btn--no" type="button" data-sim-no aria-keyshortcuts="N">NO</button>
+          <button class="btn btn--yes" type="button" data-sim-yes aria-keyshortcuts="Y">YES</button>
+        </div>
+      </div>
+
+      <div class="sim__panel" data-panel="done" hidden>
+        <h3 class="sim__title" data-sim-title>Time</h3>
+        <dl class="sim__res">
+          <div><dt>Calls made</dt><dd class="num" data-sim-calls>0</dd></div>
+          <div><dt>Backed</dt><dd class="num" data-sim-backed>0</dd></div>
+          <div><dt>Good calls</dt><dd class="num" data-sim-good>0</dd></div>
+          <div><dt>Hit rate</dt><dd class="num" data-sim-rate>&mdash;</dd></div>
+          <div><dt>Best streak</dt><dd class="num" data-sim-best>0</dd></div>
+        </dl>
+        <p class="sim__fine">A good call means YES on a profile with high invented momentum, or NO on one with low. The scoring is a toy.</p>
+        <button class="btn btn--solid" type="button" data-sim-again>Run it again</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="signal dark edge-down" id="signal">
+  <div class="wrap">
+    <header class="sec__head" data-reveal>
+      <h2 class="display">Ground truth</h2>
+      <p>Three facts about where Affirmers lives. Nothing below is guessed.</p>
+    </header>
+    <div class="signal__grid">
+      <div class="tiles"><article class="tile" data-reveal data-record="chain" data-state="stated"><span class="tile__k">Chain</span><span class="tile__v">Solana</span><span class="tile__s">Production network</span></article><article class="tile" data-reveal data-record="ca" data-state="stated"><span class="tile__k">Contract</span><span class="tile__v mono">111111&hellip;111111</span><span class="tile__s">Full address sits at the top</span></article><article class="tile" data-reveal data-record="rpc" data-state="stated"><span class="tile__k">RPC</span><span class="tile__v mono">solana-rpc.publicnode.com</span><span class="tile__s">Public read endpoint</span></article></div>
+      <section class="card pulse" data-reveal data-i="2" aria-label="Network pulse">
+        <div class="pulse__top"><h3>Network pulse</h3>
+          <span class="pill pill--lg" data-health data-state="connecting"><i class="dot" aria-hidden="true"></i><span class="pill__t" data-health-text>Connecting</span></span></div>
+        <dl class="pulse__list">
+          <div><dt>Latest slot</dt><dd class="mono" data-slot>&mdash;</dd></div>
+          <div><dt>Round trip</dt><dd class="mono" data-rtt>&mdash;</dd></div>
+        </dl>
+      </section>
+    </div>
+  </div>
+</section>
+
+<section class="board light edge-up" id="board">
+  <div class="wrap">
+    <header class="sec__head" data-reveal>
+      <h2 class="display">Pair board</h2>
+      <p>The busiest Solana pairs right now, straight from open market feeds.</p>
+    </header>
+    <div class="board__bar" data-reveal data-i="1">
+      <div class="tabs" role="tablist" aria-label="Sort pairs">
+        <button class="tab" role="tab" aria-selected="true" data-sort="vol" id="tab-vol">Volume</button>
+        <button class="tab" role="tab" aria-selected="false" data-sort="price" id="tab-price" tabindex="-1">Price</button>
+        <button class="tab" role="tab" aria-selected="false" data-sort="liq" id="tab-liq" tabindex="-1">Depth</button>
+        <button class="tab" role="tab" aria-selected="false" data-sort="chg" id="tab-chg" tabindex="-1">Movers</button>
+      </div>
+      <label class="search"><span class="sr">Filter pairs by symbol</span><input type="search" placeholder="Filter by symbol" autocomplete="off" data-filter></label>
+    </div>
+    <p class="board__count mono" data-board-count aria-live="polite">&nbsp;</p>
+    <div class="pairs" id="pairs" role="tabpanel" aria-labelledby="tab-vol" aria-busy="true"></div>
+    <div class="board__more"><button class="btn btn--dark" type="button" data-more hidden>Show more pairs</button></div>
+  </div>
+</section>
+
+<section class="notes dark edge-down" id="notes">
+  <div class="wrap">
+    <header class="sec__head" data-reveal>
+      <h2 class="display">Fine print</h2>
+    </header>
+    <div class="notes__grid">
+      <p data-reveal data-i="0"><b>Guidance, not advice.</b> Nothing on this page is financial guidance. Live figures come from public feeds and can arrive late or wrong.</p>
+      <p data-reveal data-i="1"><b>Still taking shape.</b> The contract address, social accounts and code links show up here only after the team states them. Until then those spots stay inert.</p>
+      <p data-reveal data-i="2"><b>Your keys, your risk.</b> Affirmers asks for no seed phrase and holds no wallet. Approve only what makes sense to you.</p>
+      <p data-reveal data-i="3"><b>Verify the address.</b> Compare the contract address at the top with the team's own announcement ahead of any interaction.</p>
+      <p data-reveal data-i="4"><b>The call is fiction.</b> The profiles in the 90-second call are invented and its scoring is a toy. It predicts nothing about any real person or coin.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <span class="brand brand--static"><svg class="brand__mark" aria-hidden="true"><use href="#mark"/></svg><span class="brand__name">Affirmers</span></span>
+    <p>affirmers.app &middot; Built for Solana. Readings from Solana RPC, DefiLlama and DexScreener.</p>
+  </div>
+</footer>
+
+<nav class="dock" aria-label="Sections">
+  <a href="#top">Top</a><a href="#flow">Flow</a><a href="#call">Call</a><a href="#board">Board</a>
+</nav>
+</body>
+</html>

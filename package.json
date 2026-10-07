@@ -1,0 +1,14 @@
+{
+  "name": "affirmers",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Affirmers: a pledge protocol built for Solana.",
+  "license": "MIT",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "gates": "node tools/gates.mjs",
+    "serve": "node tools/serve.mjs dist"
+  },
+  "engines": { "node": ">=20" }
+}

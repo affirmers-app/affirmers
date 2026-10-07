@@ -1,0 +1,11 @@
+{
+  "records": [
+    { "id": "chain",  "state": "stated", "value": "Solana", "note": "mainnet, no EVM chain id", "source": "client statement", "recorded": "2026-10-07" },
+    { "id": "rpc",    "state": "stated", "value": "https://solana-rpc.publicnode.com", "source": "client statement", "recorded": "2026-10-07" },
+    { "id": "domain", "state": "stated", "value": "affirmers.app", "source": "client statement and brand comps", "recorded": "2026-10-07" },
+    { "id": "ticker", "state": "stated", "value": "AFRM", "source": "brand comps", "recorded": "2026-10-07" },
+    { "id": "ca",     "state": "absent", "value": null, "format": "base58, 32-44 chars", "source": "none", "recorded": "2026-10-07" },
+    { "id": "x",      "state": "absent", "url": null, "source": "none", "recorded": "2026-10-07" },
+    { "id": "github", "state": "absent", "url": null, "source": "none", "recorded": "2026-10-07" }
+  ]
+}

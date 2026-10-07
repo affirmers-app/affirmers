@@ -1,0 +1,15 @@
+{
+  "note": "sRGB samples read from the supplied brand files. Every colour token must trace back to one of these.",
+  "samples": {
+    "white":  { "rgb": [255, 255, 255], "from": "wordmark in reference comps" },
+    "ink0":   { "rgb": [1, 5, 6],       "from": "reference comp, page background" },
+    "ink1":   { "rgb": [1, 13, 13],     "from": "reference comp, upper glow region" },
+    "ink2":   { "rgb": [2, 27, 23],     "from": "reference comp, lower glow region" },
+    "line":   { "rgb": [3, 45, 33],     "from": "reference comp, right edge shade" },
+    "deep":   { "rgb": [2, 82, 57],     "from": "reference comp, bottom glow" },
+    "rim":    { "rgb": [4, 105, 71],    "from": "reference comp, top right glow" },
+    "brand":  { "rgb": [0, 186, 123],   "from": "brand/LOGO AFFIRMERS PNG.png background" },
+    "bright": { "rgb": [0, 244, 159],   "from": "reference comp, headline fill" },
+    "mist":   { "rgb": [99, 101, 100],  "from": "reference comp, secondary text" }
+  }
+}
